@@ -30,6 +30,15 @@ body {
   width: 100%;
 }
 
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+    .content {
+      flex-wrap: nowrap;
+    }
+}
+
 .description {
   font-size: 1.875rem;
   min-height: 20rem;
@@ -55,6 +64,15 @@ body {
   width: 20rem;
 }
 
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+    .call-to-action {
+      margin-bottom: 2rem;
+    }
+}
+
 .call-to-action:hover {
   background: rgba(255, 255, 255, 1);
   cursor: pointer;
@@ -63,6 +81,15 @@ body {
 .social {
   align-self: flex-end;
   margin-right: 2rem;
+}
+
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+    .social {
+      align-self: flex-start;
+    }
 }
 
 .twitter {
